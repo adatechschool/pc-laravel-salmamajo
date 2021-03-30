@@ -8,3 +8,8 @@ JOUR 1 :
 - découpage de l'itération 1 en features 
 - réflexion autour des tables nécessaires pour la base de données
 - setup technique : Docker, Laravel, Sail
+
+JOUR 2:
+- Problème de sail résolu sur un ordi
+- Suivi du tuto vibe
+- Affichage du Hello world  :)
