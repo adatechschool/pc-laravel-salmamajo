@@ -13,3 +13,11 @@ JOUR 2:
 - Problème de sail résolu sur un ordi
 - Suivi du tuto vibe
 - Affichage du Hello world  :)
+
+JOUR 3:
+- Résolution sail sur 2 ordis
+- Création Usercontroller + Route correspondante 
+- Ajout champs biography + ajout dans la bdd 
+- Affichage de la bio ds localhost/users/1
+
+
