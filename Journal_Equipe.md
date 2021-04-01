@@ -20,4 +20,10 @@ JOUR 3:
 - Ajout champs biography + ajout dans la bdd 
 - Affichage de la bio ds localhost/users/1
 
+Jour 4:
+- Installation tailwind
+- page register + login fonctionnelles
+- obligation de remplir ts les champs de la page register + champs biographie
+- template page utilisateur ajouté
+- Pb sur l'affichage d'une img post alors qu'on est sur la route user
 
