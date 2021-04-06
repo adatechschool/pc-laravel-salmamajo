@@ -47,7 +47,9 @@ class UserController extends Controller
     public function show(User $user)
     {
         return view('users.show', [
-            'user' => $user
+            'user' => $user,
+            'img_url' => $user->posts[0]->img_url,
+            'description' => $user->posts[0]->description
         ]);
     }
 
