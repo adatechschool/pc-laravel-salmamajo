@@ -35,7 +35,11 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'img_url' => 'required',
+            'description' => 'required'
+        ]);
+        event(new Registered($post));
     }
 
     /**
