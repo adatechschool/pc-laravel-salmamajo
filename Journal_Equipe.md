@@ -27,3 +27,7 @@ Jour 4:
 - template page utilisateur ajouté
 - Pb sur l'affichage d'une img post alors qu'on est sur la route user
 
+Jour 5:
+- Affichage de post dans user 
+-  Affichage de tous les posts de l'user en fonction de la date 
+-  ajouter un formulaire dans la BDD 
