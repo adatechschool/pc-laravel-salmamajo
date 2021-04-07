@@ -1,5 +1,5 @@
 <?php
-
+use Illuminate\Http\Request; 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\UserController;
@@ -23,7 +23,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::resource('posts', PostController::class);
-Route::resource('posts', UserController::class);
+
 Route::resource('users', UserController::class);
+
+Route::post('/creatpost', 'App\Http\Controllers\PostController@postCreatePost');
+
+Route::post('/upload', 'App\Http\Controllers\UserController@uploadAvatar');
 
 require __DIR__.'/auth.php';

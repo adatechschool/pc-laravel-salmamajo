@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Route;
 
 class UserController extends Controller
 {
@@ -35,9 +36,19 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
     }
-
+    public function uploadAvatar(Request $request)
+    {
+        if($request->hasFile('image')){
+            $filename = $request->image->getClientOriginalName();
+            $request->image->storeAs('images',$filename, 'public');    
+            auth()->user()->update(['avatar'=>$filename]); // ici on va update l'user loggé 
+        }
+       
+        
+        return redirect()->back();
+    }
     /**
      * Display the specified resource.
      *
@@ -48,8 +59,8 @@ class UserController extends Controller
     {
         return view('users.show', [
             'user' => $user,
-            'img_url' => $user->posts[0]->img_url,
-            'description' => $user->posts[0]->description
+            'description' => $user->posts[0]->description,
+            'img_url' => $user->posts[0]->img_url
         ]);
     }
 

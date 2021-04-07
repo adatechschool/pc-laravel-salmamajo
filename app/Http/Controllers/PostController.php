@@ -35,13 +35,16 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'img_url' => 'required',
-            'description' => 'required'
-        ]);
-        event(new Registered($post));
-    }
 
+    }
+    public function postCreatePost(Request $request)
+    {
+        $post = new Post();
+        $post->description = $request ['description'];
+        $post->img_url = $request ['img_url'];
+        $request->user()->posts()->save($post);
+        return redirect()->route('dashboard');
+    }
     /**
      * Display the specified resource.
      *
