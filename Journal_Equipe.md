@@ -31,3 +31,9 @@ Jour 5:
 - Affichage de post dans user 
 -  Affichage de tous les posts de l'user en fonction de la date 
 -  ajouter un formulaire dans la BDD 
+
+Jour 6:
+- Possibilité de créer un nouveau post par l'user connecté : image, description
+- Ajout dans la base de données
+
+A faire: pouvoir afficher l'image, faire la page d'accueil et la relier aux autres pages.
