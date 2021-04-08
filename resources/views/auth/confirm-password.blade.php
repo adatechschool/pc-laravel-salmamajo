@@ -2,7 +2,8 @@
     <x-auth-card>
         <x-slot name="logo">
             <a href="/">
-                <x-application-logo class="w-20 h-20 fill-current text-gray-500" />
+            <img src="https://img.icons8.com/officel/80/000000/titanic.png" alt="LogoTitanic" width="100"> 
+            <h1 style="text-align:center;">InstaTitanic</h1>
             </a>
         </x-slot>
 

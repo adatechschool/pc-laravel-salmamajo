@@ -36,7 +36,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-       
+       //
     }
     public function uploadAvatar(Request $request)
     {

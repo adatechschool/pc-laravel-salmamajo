@@ -35,7 +35,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-
+        $request->img_url->storeAs('images',$filename, 'public');   
     }
     public function postCreatePost(Request $request)
     {
@@ -45,6 +45,8 @@ class PostController extends Controller
         $request->user()->posts()->save($post);
         return redirect()->route('dashboard');
     }
+
+
     /**
      * Display the specified resource.
      *

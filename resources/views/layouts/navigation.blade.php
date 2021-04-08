@@ -6,7 +6,9 @@
                 <!-- Logo -->
                 <div class="flex-shrink-0 flex items-center">
                     <a href="{{ route('dashboard') }}">
-                        <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                    <img src="https://img.icons8.com/officel/80/000000/titanic.png" alt="LogoTitanic" width="40"> 
+                  <h1 style="text-align:center;">InstaTitanic</h1>
+                        
                     </a>
                 </div>
 

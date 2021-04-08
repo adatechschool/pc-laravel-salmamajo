@@ -11,6 +11,10 @@
                 <div class="p-6 bg-white border-b border-gray-200">
                     You're logged in!
                 </div>
+                <div class="p-6 bg-white border-b border-gray-200">
+                     <a href=" {{ __('users/1') }} ">Acceder à mes posts </a>
+                     
+                </div>
                     <form action="/upload" method="post" enctype="multipart/form-data">
                         @csrf 
                         <input type="file" name="image">
