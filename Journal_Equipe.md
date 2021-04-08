@@ -37,3 +37,15 @@ Jour 6:
 - Ajout dans la base de données
 
 A faire: pouvoir afficher l'image, faire la page d'accueil et la relier aux autres pages.
+
+Jour 7: 
+- Layout de la page d'accueil
+- Uniformisation des pages
+- Lien Dashboard vers Page User
+
+TO DO: 
+- faire apparaître tous les posts dans la page d'accueil (classé par date plus récente)
+- passer d'une page à une autre avec même user_id
+
+
+Mot de la fin : We did Survive :P
